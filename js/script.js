@@ -3,7 +3,7 @@ function storeForm(){
     const km = document.getElementById('km').value;
     const eta = document.getElementById('eta').value;
     alert(nome + km + eta)
-    console.log(nome);
+    
     console.log(km);
     console.log(eta);
     document.getElementById('nome-out').innerHTML = nome;
@@ -11,3 +11,4 @@ function storeForm(){
     document.getElementById('eta-out').innerHTML = eta;
 }
 
+console.log(nome);
