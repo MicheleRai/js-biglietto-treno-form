@@ -1,4 +1,8 @@
-div{
-    background: lightgray;
-    height: 20px;
+body{
+    background-image: url(https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/norway/large_Travelling_with_train_Fla_m_Torild_Moland_TravelStock_388b4c82_a719_4ec1_bfc2_ce3c26e9c4ad_ab8ce8cc-28ed-4e78-a3a6-e45619cbbffb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
 }

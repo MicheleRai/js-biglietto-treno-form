@@ -11,19 +11,21 @@
     <script src="js/script.js"></script>
 </head>
 <body>
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     <form onsubmit="event.preventDefault(); return false;">
         <input id="nome" type="text" placeholder="Nome e Cognome Utente">
         <input id="km" type="number" placeholder="Distanza da percorrere">
         <select name="età" id="eta">
             <option value="minorenne">minorenne</option>
             <option value="maggiorenne">maggiorenne</option>
-            <option value="over 65">over 65</option>
+            <option value="over-65">over 65</option>
         </select>
         <button onclick="storeForm()">Genera</button>
         <input type="reset" name="reset">  
     </form> 
     <div id="nome-out"></div>
     <div id="km-out"></div>
-    <div id="eta-out"></div>
+    <div id="tipo"></div>
+
 </body>
 </html>
