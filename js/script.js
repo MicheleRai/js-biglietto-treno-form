@@ -6,8 +6,8 @@ function storeForm(){
     console.log(nome);
     console.log(km);
     console.log(eta);
+    document.getElementById('nome-out').innerHTML = nome;
+    document.getElementById('km-out').innerHTML = km;
+    document.getElementById('eta-out').innerHTML = eta;
 }
 
-//document.getElementById('nome-out').innerHTML = nome;
-//document.getElementById('km-out').innerHTML = km;
-//document.getElementById('eta-out').innerHTML = eta;
