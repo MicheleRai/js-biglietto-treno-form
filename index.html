@@ -6,40 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto</title>
     <!-- style -->
+    <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- script -->
     <script src="js/script.js"></script>
 </head>
-<body>
+<body class="row content-center items-mid">
     <div class="container">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <form onsubmit="event.preventDefault(); return false;">
-            <div>
-                <div></div>
+        <form class="row col-10 content-center" onsubmit="event.preventDefault(); return false;">
+            <div class="col-4 align-center">
+                <h5>Nome e Cognome Utente</h5>
                 <input id="nome" type="text" placeholder="Inserisci Nome e Cognome">
             </div>
             
-            <div>
-                <div></div>
+            <div class="col-4 align-center">
+                <h5>Inserire distanza dalla meta</h5>
                 <input id="km" type="number" placeholder="Inserisci Distanza ">
             </div>
             
-            <div>
-                <div></div>
-                <select name="età" id="eta">
+            <div class="col-4 align-center">
+                <h5>Inserire range d'età</h5>
+                <select class="container-eta" name="età" id="eta">
                     <option value="minorenne">minorenne</option>
                     <option value="maggiorenne">maggiorenne</option>
                     <option value="over-65">over 65</option>
                 </select>
             </div>
            
-            <button onclick="storeForm()">Genera</button>
-            <input type="reset" name="reset">  
+           <div class="button-container col-12 row content-center">
+            <button class="align-center col-2" onclick="storeForm()">Genera</button>
+            <button class="align-center col-2 col-offset-1" type="reset">Annulla</button>  
+           </div>
         </form> 
-    <div id="nome-out"></div>
-    <div id="km-out"></div>
-    <div id="tipo"></div>
-    <div id="prezzo"></div>
+        <div class="biglietto">
+            <div id="nome-out"></div>
+            <div id="km-out"></div>
+            <div id="tipo"></div>
+            <div id="prezzo"></div>
+        </div>
+    
     </div>
 </body>
 </html>
