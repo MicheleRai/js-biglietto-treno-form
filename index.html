@@ -12,15 +12,18 @@
 </head>
 <body>
     <form action="calcolo">
-        <input type="text" name="nome">
-        <input type="number" name="distanza">
-        <select name="età" id="età">
+        <input id="nome" type="text" placeholder="Nome e Cognome Utente">
+        <input id="km" type="number" placeholder="Distanza da percorrere">
+        <select name="età" id="eta">
             <option value="minorenne">minorenne</option>
             <option value="maggiorenne">maggiorenne</option>
             <option value="over 65">over 65</option>
         </select>
-        <button>Genera</button>
+        <button onclick="storeForm()">Genera</button>
         <input type="reset" name="reset">  
     </form> 
+    <div id="nome-out"></div>
+    <div id="km-out"></div>
+    <div id="eta-out"></div>
 </body>
 </html>
