@@ -4,5 +4,21 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.79);
+    padding: 2rem;
+    border-radius: 20px;
+    height: 80vh;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    
 }

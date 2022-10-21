@@ -11,21 +11,35 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <form onsubmit="event.preventDefault(); return false;">
-        <input id="nome" type="text" placeholder="Nome e Cognome Utente">
-        <input id="km" type="number" placeholder="Distanza da percorrere">
-        <select name="età" id="eta">
-            <option value="minorenne">minorenne</option>
-            <option value="maggiorenne">maggiorenne</option>
-            <option value="over-65">over 65</option>
-        </select>
-        <button onclick="storeForm()">Genera</button>
-        <input type="reset" name="reset">  
-    </form> 
+    <div class="container">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <form onsubmit="event.preventDefault(); return false;">
+            <div>
+                <div></div>
+                <input id="nome" type="text" placeholder="Inserisci Nome e Cognome">
+            </div>
+            
+            <div>
+                <div></div>
+                <input id="km" type="number" placeholder="Inserisci Distanza ">
+            </div>
+            
+            <div>
+                <div></div>
+                <select name="età" id="eta">
+                    <option value="minorenne">minorenne</option>
+                    <option value="maggiorenne">maggiorenne</option>
+                    <option value="over-65">over 65</option>
+                </select>
+            </div>
+           
+            <button onclick="storeForm()">Genera</button>
+            <input type="reset" name="reset">  
+        </form> 
     <div id="nome-out"></div>
     <div id="km-out"></div>
     <div id="tipo"></div>
-
+    <div id="prezzo"></div>
+    </div>
 </body>
 </html>

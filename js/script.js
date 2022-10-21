@@ -18,14 +18,16 @@ function storeForm(){
         var prezzo = prezzo - (prezzo * 0.2 )
         var prezzo = prezzo.toFixed(2);
         document.getElementById('tipo').innerHTML = 'Biglietto ridotto per minore';
+        document.getElementById('prezzo').innerHTML = prezzo;
 
     }else if (age = 'over-65'){
         var prezzo = prezzo - (prezzo * 0.4 )
         var prezzo = prezzo.toFixed(2);
         document.getElementById('tipo').innerHTML = 'Biglietto ridotto per over 65';
+        document.getElementById('prezzo').innerHTML = prezzo;
 
         }else{
-            document.getElementById('scontato').innerHTML = prezzo;
+            document.getElementById('prezzo').innerHTML = prezzo;
             document.getElementById('tipo').innerHTML = 'Biglietto standard';
         }
     
