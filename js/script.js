@@ -35,18 +35,31 @@ function storeForm(){
 }
 
 function generate() {
+    const  dati = document.getElementById('dati');
+    const  ticketBtn = document.getElementById('ticketBtn');
     const  ticket = document.getElementById('ticket');
     if (ticket.style.display === "none") {
         ticket.style.display = "block";
+        ticketBtn.style.display = "none";
+        dati.style.display = "none";
+
     } else {
         ticket.style.display = "block";
+        ticketBtn.style.display = "none";
+        dati.style.display = "none";
     }
 }
 function cancell() {
+    const  dati = document.getElementById('dati');
+    const  ticketBtn = document.getElementById('ticketBtn');
     const  ticket = document.getElementById('ticket');
     if (ticket.style.display === "block") {
         ticket.style.display = "none";
+        ticketBtn.style.display = "block";
+        dati.style.display = "block";
     } else {
         ticket.style.display = "none";
+        ticketBtn.style.display = "block";
+        dati.style.display = "block";
     }
 }

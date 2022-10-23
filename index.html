@@ -17,7 +17,8 @@
 </head>
 <body class="row content-center items-mid">
     <div class="container">
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div id="dati">
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <form class="row col-10 content-center" onsubmit="event.preventDefault(); return false;">
             <div class="col-4 align-center">
                 <h5>Nome e Cognome Utente</h5>
@@ -37,38 +38,39 @@
                     <option value="over-65">over 65</option>
                 </select>
             </div>
-           
+        </div>
+            <div id="ticket" class="container-biglietto" style="display:none">
+                <h1>IL TUO BIGLIETTO</h1>
+                <div class="biglietto">
+                    <h4 class="col-12">DETTAGLI PASSEGGERO</h4>
+                   <div class="container-out row">
+                        <div class="container-nome col-4 white align-center">
+                            <h5>NOME PASSEGGERO</h5>
+                            <div id="nome-out"></div>
+                        </div>
+                        <div class="container-dati col-8 row content-around align-center">
+                            <div class="container-tipo col-4">
+                                <h5>OFFERTA</h5>
+                                <div id="tipo"></div>
+                            </div>
+                            <div class="container-km col-4">
+                                <h5>KM PERCORSO</h5>
+                                <div id="km-out"></div>
+                            </div>
+                            <div class="container-prezzo col-4">
+                                <h5>COSTO BIGLIETTO</h5>
+                                <div id="prezzo"></div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
            <div class="button-container col-12 row content-center">
-            <button class="align-center col-2"  onclick="storeForm() ; generate()">Genera</button>
-            <button class="align-center col-2 col-offset-1 reset"onclick="cancell()" type="reset">Annulla</button>  
+            <button id="ticketBtn" class="align-center col-3"  onclick="storeForm() ; generate()">Genera</button>
+            <button class="align-center col-3 reset"onclick="cancell()" type="reset">Annulla</button>  
            </div>
         </form> 
-        <div id="ticket" class="container-biglietto" style="display:none">
-            <h1>IL TUO BIGLIETTO</h1>
-            <div class="biglietto">
-                <h4 class="col-12">DETTAGLI PASSEGGERO</h4>
-               <div class="container-out row">
-                    <div class="container-nome col-4 white align-center">
-                        <h5>NOME PASSEGGERO</h5>
-                        <div id="nome-out"></div>
-                    </div>
-                    <div class="container-dati col-8 row content-around align-center">
-                        <div class="container-tipo col-4">
-                            <h5>OFFERTA</h5>
-                            <div id="tipo"></div>
-                        </div>
-                        <div class="container-km col-4">
-                            <h5>KM PERCORSO</h5>
-                            <div id="km-out"></div>
-                        </div>
-                        <div class="container-prezzo col-4">
-                            <h5>COSTO BIGLIETTO</h5>
-                            <div id="prezzo"></div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-        </div>
+       
       
     
     </div>
