@@ -15,20 +15,20 @@ function storeForm(){
     console.log('Prezzo senza sconti:' + prezzo);
 
     if (age = 'minorenne' ){
-        var prezzo = prezzo - (prezzo * 0.2 )
+        var prezzo = prezzo - (prezzo * 0.2 );
         var prezzo = prezzo.toFixed(2);
-        document.getElementById('tipo').innerHTML = 'Biglietto ridotto per minore';
+        document.getElementById('tipologia').innerHTML = 'Biglietto ridotto per minore';
         document.getElementById('prezzo').innerHTML = prezzo + '&#8364';
 
     }else if (age = 'over-65'){
-        var prezzo = prezzo - (prezzo * 0.4 )
+        var prezzo = prezzo - (prezzo * 0.4 );
         var prezzo = prezzo.toFixed(2);
-        document.getElementById('tipo').innerHTML = 'Biglietto ridotto per over 65';
+        document.getElementById('tipologia').innerHTML = 'Biglietto ridotto per over 65';
         document.getElementById('prezzo').innerHTML = prezzo + '&#8364';
 
         }else{
             document.getElementById('prezzo').innerHTML = prezzo + '&#8364';
-            document.getElementById('tipo').innerHTML = 'Biglietto standard';
+            document.getElementById('tipologia').innerHTML = 'Biglietto standard';
         }
     
     console.log('Prezzo con sconti (se presenti):' + prezzo)
