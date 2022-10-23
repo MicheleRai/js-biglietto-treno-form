@@ -6,6 +6,7 @@ body{
     background-attachment: fixed; 
     color: white;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 .container{
     background-color: rgba(0, 0, 0, 0.79);
@@ -22,7 +23,7 @@ form{
 .container-eta{
     width: 166px;
 }
-h5{
+form h5{
     margin: 1.5rem 0;
     text-align: center;
 }
@@ -39,3 +40,36 @@ h5{
     font-size: 16px;
     cursor: pointer;
   }
+.button-container .reset {
+    background-color: red;
+}
+.container-biglietto{
+    margin-top: 3rem;
+}
+.biglietto{
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    color: black;
+    height: 25vh;
+}
+.container-out{
+    height: 90%;
+}
+.container-nome{
+    background-color: #4CAF50;
+    height: 100%;
+}
+.container-nome h5{
+    padding-top: 1rem;
+}
+#nome-out{
+    padding-top: 2rem;
+}
+.container-dati{
+    height: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.container-dati>div{
+}

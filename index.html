@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
     <!-- style -->
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
@@ -36,15 +40,36 @@
            
            <div class="button-container col-12 row content-center">
             <button class="align-center col-2" onclick="storeForm()">Genera</button>
-            <button class="align-center col-2 col-offset-1" type="reset">Annulla</button>  
+            <button class="align-center col-2 col-offset-1 reset" type="reset">Annulla</button>  
            </div>
         </form> 
-        <div class="biglietto">
-            <div id="nome-out"></div>
-            <div id="km-out"></div>
-            <div id="tipo"></div>
-            <div id="prezzo"></div>
+        <div class="container-biglietto">
+            <h1>IL TUO BIGLIETTO</h1>
+            <div class="biglietto">
+                <h4 class="col-12">DETTAGLI PASSEGGERO</h4>
+               <div class="container-out row">
+                    <div class="container-nome col-4 white align-center">
+                        <h5>NOME PASSEGGERO</h5>
+                        <div id="nome-out">sopot</div>
+                    </div>
+                    <div class="container-dati col-8 row content-around">
+                        <div class="container-km">
+                            <h5>LUNGHEZZA PERCORSO</h5>
+                            <div id="km-out">dg</div>
+                        </div>
+                        <div class="container-tipo">
+                            <h5>OFFERTA</h5>
+                            <div id="tipo">fgr</div>
+                        </div>
+                        <div class="container-prezzo">
+                            <h5>COSTO BIGLIETTO</h5>
+                            <div id="prezzo">sgrh</div>
+                        </div>
+                    </div>
+               </div>
+            </div>
         </div>
+      
     
     </div>
 </body>
