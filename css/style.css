@@ -55,6 +55,7 @@ form h5{
     background-color: white;
     color: black;
     height: 25vh;
+    border-radius: 10px;
 }
 .container-out{
     height: 90%;
