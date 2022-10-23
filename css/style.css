@@ -13,6 +13,9 @@ body{
     padding: 2rem;
     border-radius: 20px;
     height: 80vh;
+    max-width: 1000px;
+    width: 70vw;
+    min-width: 700px;
 }
 h1{
     text-align: center;
@@ -72,4 +75,8 @@ form h5{
     border-bottom: 2px solid black;
 }
 .container-dati>div{
+    padding: 1rem 0;
+}
+.container-dati h5{
+    padding-bottom: 2rem;
 }
