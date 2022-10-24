@@ -5,8 +5,8 @@ function storeForm(){
     const km = document.getElementById('km').value;
     console.log(km);
 
-    const eta = document.getElementById('eta').value;
-    console.log(eta);
+    const age = document.getElementById('eta').value;
+    console.log(age);
     
     document.getElementById('nome-out').innerHTML = nome;
     document.getElementById('km-out').innerHTML = km + 'km';
@@ -14,13 +14,13 @@ function storeForm(){
     var prezzo = km * 0.24;
     console.log('Prezzo senza sconti:' + prezzo);
 
-    if (age = 'minorenne' ){
+    if (age == 'minorenne' ){
         var prezzo = prezzo - (prezzo * 0.2 );
         var prezzo = prezzo.toFixed(2);
         document.getElementById('tipologia').innerHTML = 'Biglietto ridotto per minore';
         document.getElementById('prezzo').innerHTML = prezzo + '&#8364';
 
-    }else if (age = 'over-65'){
+    }else if (age == 'over-65'){
         var prezzo = prezzo - (prezzo * 0.4 );
         var prezzo = prezzo.toFixed(2);
         document.getElementById('tipologia').innerHTML = 'Biglietto ridotto per over 65';
