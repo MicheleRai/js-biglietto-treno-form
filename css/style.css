@@ -26,7 +26,7 @@ form{
 .container-eta{
     width: 166px;
 }
-form h5{
+form h4{
     padding: 2rem 0;
     text-align: center;
 }
@@ -82,3 +82,8 @@ form h5{
 .container-dati h5{
     padding-bottom: 2rem;
 }
+select, input {
+    padding: 16px 20px;
+    border: 3px solid #4CAF50;
+    border-radius: 10px;
+  }
